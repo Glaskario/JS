@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro passos COM DOM</title>
+    <title>Primeiro passos com DOM</title>
     <style>
         body{
             background: rgb(138, 175, 192);
@@ -29,9 +29,14 @@
         d.innerText = 'Estou aguardando...'
 */
         
-        var d = window.document.querySelector('div#jojo')
+        /*var d = window.document.querySelector('div#jojo')
 
-        d.style.color = 'blue'
+        d.style.color = 'blue'*/
+        var p2 = window.document.getElementsByTagName('p')[0]
+        var corpo = window.document.body
+        corpo.style.background = 'black'
+        document.write(p1.innerText)
+        window.document.write('Está escrito assim: ' + p1.innerText)
         
     </script>
 </body>
