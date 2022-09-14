@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu país?</title>
+</head>
+<body>
+    <h1>Consulta de origem!</h1>
+
+   Digite seu pais para saber <input type="text" name="pais" id="pais">
+   <input type="button" value="Verificar" onclick="calcular()">
+   <div id="res"></div>
+
+   <script>
+    function calcular(){
+        
+        var pais = document.querySelector('#pais')
+        var res = document.querySelector('#res')
+        if (pais.value === 'Brasil'){
+            res.innerHTML = 'Você é brasileiro'
+        }
+    }
+   </script>
+
+    
+</body>
+</html>
