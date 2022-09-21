@@ -4,16 +4,19 @@ function carregar (){
     var data =  new Date
     var hora = data.getHours
     var hora = Number(data.getHours())
-    msg.innerHTML = `Agora são${hora} horas.`
-    if(hora >= 0 && hora < 12){
+    msg.innerHTML = `Agora são ${hora} horas.`
+    if(hora >= 0 && hora < 12) {
         //BOM DIA//
-        img.src = 'manha.png'
-    }else if(hora >= 13 && hora < 18){
+        img.src = 'imagens/manha.png'
+        window.document.body.style.background = '#b78669'
+    } else if(hora >= 13 && hora < 18){
         //BOA TARDE//
-        img.src = 'tarde.png'
-    }else{
+        img.src = 'imagens/tarde.png'
+        document.body.style.background = '#edd4b6'
+    } else {
         //BOA NOITE//
-        img.src = 'noite.png'
+        img.src = 'imagens/noite.png'
+        document.body.style.background = '#675738'
     }
     }
 
