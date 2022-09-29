@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
+*{
+    margin: 0 auto;
+}
 body{
 
 background-color:rgb(49, 100, 145) ;
 font: normal  15pt arial;
 }
 header{
-
+margin-top: 15vh;
+height: 15vh;
 }
 h1{
     color: white;
@@ -16,9 +20,10 @@ section{
     background-color: white;
     border-radius: 10px;
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
    margin: auto;
    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+   padding-bottom: 30px;
 
 }
 
@@ -26,7 +31,18 @@ footer{
     text-align: center;
 
 }
-div{
+
+div.pai{
     text-align: center;
     padding: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+.filho{
+    display: flex;
+    
+
 }

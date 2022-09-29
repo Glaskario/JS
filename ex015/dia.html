@@ -5,19 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dia1.css">
-    <title>Hora do dia</title>
+    <title>Verificador de idade</title>
 </head>
-<body onload="carregar()"> 
+<body> 
         <header>
-            <h1>Hora do dia</h1>
+            <h1>Verificador de idade</h1>
         </header>
           <section>
-            <div id="msg">
-                aqui vai aparecer a mensagem
+            <div class="pai">
+                <p class="filho">Ano de nascimentos:
+                    <input type="number" name="txtano" id="txtano" min="0" max="4" placeholder="EX: 2000">
+                </p>
+                <p class="filho">Sexor:
+                    <input type="radio" name="radsexo" id="masc">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsexo"  id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
+                <p class="filho">
+                    <input type="button" value="Verificar" onclick="verificar()">
+
+                </p>
+                <img src="" alt="foto" class="filho" id="img">
 
             </div>
-            <div id="foto">
-                <img id="img" src="imagens/manha.png" alt="Foto da parte da manhã">
+            <div id="res">
+                Preencha os dados acima para ver o resultado!
     
                 
             </div>

@@ -26,7 +26,13 @@ footer{
     text-align: center;
 
 }
-div{
+div.pai{
     text-align: center;
     padding: 9px;
+    display: flex;
+    
+}
+.filho{
+    display: flex;
+
 }
